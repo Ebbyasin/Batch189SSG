@@ -7,19 +7,21 @@ public class C02_IfStatements {
     public static void main(String[] args) {
         //Soru 1) Kullanicidan bir tamsayi isteyin
         //ve sayinin tek veya cift oldugunu yazdirin
-
-        Scanner input=new Scanner(System.in);
+        Scanner scan=new Scanner(System.in);
         System.out.println("lutfen bir tamsayi giriniz");
-        int sayi= input.nextInt();
-
+        int sayi= scan.nextInt();
+        //1.yol
         if (sayi%2==0){
-            System.out.println("Sayi cifttir");
+            System.out.println("sayi cifttir");
         }
         if (sayi%2!=0){
-            System.out.println("Sayi tektir");
+            System.out.println("sayi tektir");
         }
-        if (sayi==0){
+
+        if (sayi%2==0){//eger
             System.out.println("sayi cifttir");
+        }else {//degilse
+            System.out.println("sayi tektir");
         }
     }
 }
